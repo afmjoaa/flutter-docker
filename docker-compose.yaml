@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  flutter_docker:
+    build: .
+    container_name: flutter_docker_c
+    ports:
+      - '9102:9102'
+    volumes:
+      - ./lib:/lib
+
